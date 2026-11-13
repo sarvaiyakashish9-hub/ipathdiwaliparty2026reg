@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPath Infotech - Diwali Party 2026 RSVP</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-festive {
+      font-family: 'Cinzel', serif;
+    }
+    .diwali-gradient {
+      background: linear-gradient(135deg, #1f0b2e 0%, #380d46 50%, #4a0e4e 100%);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(90deg, #F9D423 0%, #FF4E50 50%, #F9D423 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-glow {
+      box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.15), 0 8px 10px -6px rgba(245, 158, 11, 0.1);
+    }
+    .radio-card input:checked + label {
+      border-color: #d97706;
+      background-color: #fffbeb;
+      color: #92400e;
+    }
+    .radio-card input:checked + label .check-icon {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body class="bg-amber-50/50 text-slate-800 min-h-screen flex flex-col">
+
+  <!-- Diwali Header Bar -->
+  <header class="diwali-gradient text-white py-6 px-4 sm:px-8 border-b-4 border-amber-500 relative overflow-hidden shadow-lg">
+    <!-- Festive Background Patterns (SVG) -->
+    <div class="absolute -right-8 -top-8 w-44 h-44 opacity-20 pointer-events-none">
+      <svg viewBox="0 0 100 100" fill="currentColor" class="text-amber-300 w-full h-full animate-spin" style="animation-duration: 40s;">
+        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+        <path d="M50 0 L55 35 L90 20 L65 45 L100 50 L65 55 L90 80 L55 65 L50 100 L45 65 L10 80 L35 55 L0 50 L35 45 L10 20 L45 35 Z" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="absolute -left-10 -bottom-10 w-36 h-36 opacity-20 pointer-events-none">
+      <svg viewBox="0 0 100 100" fill="currentColor" class="text-amber-300 w-full h-full animate-spin" style="animation-duration: 35s; animation-direction: reverse;">
+        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="2" fill="none"/>
+        <polygon points="50,10 63,38 90,50 63,62 50,90 37,62 10,50 37,38" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+      <div class="text-center sm:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-semibold tracking-wider uppercase mb-1">
+          <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C12 2 7 9 7 14C7 16.7614 9.23858 19 12 19C14.7614 19 17 16.7614 17 14C17 9 12 2 12 2Z"/>
+            <path d="M12 19C10.8954 19 10 18.1046 10 17C10 15.5 12 13 12 13C12 13 14 15.5 14 17C14 18.1046 13.1046 19 12 19Z" fill="#ffedd5"/>
+          </svg>
+          iPath Infotech Private Limited
+        </div>
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-festive font-bold tracking-tight text-white flex items-center justify-center sm:justify-start gap-2">
+          <span>Diwali Gala & Party 2026</span>
+          <span class="text-amber-400 text-2xl">✨</span>
+        </h1>
+        <p class="text-amber-200/90 text-sm mt-1 flex items-center justify-center sm:justify-start gap-2">
+          <svg class="w-4 h-4 text-amber-400 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          <span>Date: <strong class="text-amber-300 font-semibold">Saturday, 28th of November 2026</strong></span>
+          <span class="text-amber-400/60">•</span>
+          <span>Team Availability & RSVP Register</span>
+        </p>
+      </div>
+
+      <!-- Navigation Tabs & Cloud Sync -->
+      <div class="flex flex-wrap items-center gap-2 bg-purple-950/70 p-1.5 rounded-xl border border-amber-500/30">
+        <button id="tabRegisterBtn" type="button" class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 bg-amber-500 text-slate-900 shadow-md">
+          ✍️ RSVP Form
+        </button>
+        <button id="tabDashboardBtn" type="button" class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-amber-200 hover:text-white hover:bg-white/10">
+          📊 Responses (<span id="responseCountBadge">0</span>)
+        </button>
+        <button id="openCloudModalBtn" type="button" class="px-3 py-2 rounded-lg text-xs font-semibold transition-all duration-200 bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 border border-amber-400/40 flex items-center gap-1.5" title="Connect Google Sheet for live multi-user responses">
+          <span id="cloudStatusIcon">☁️</span>
+          <span id="cloudStatusText">Cloud Sync</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-grow max-w-5xl w-full mx-auto p-4 sm:p-6 lg:p-8">
+
+    
+    
+        <!-- Password Authentication Modal for Responses -->
+    <div id="authModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200">
+      <div class="bg-white rounded-2xl max-w-sm w-full shadow-2xl border-2 border-amber-400 overflow-hidden transform scale-95 transition-transform duration-200" id="authModalCard">
+        <div class="diwali-gradient text-white p-5 text-center border-b-2 border-amber-500 relative">
+          <div class="w-12 h-12 rounded-full bg-amber-500 text-slate-900 text-2xl flex items-center justify-center mx-auto mb-2 shadow-md">
+            🔒
+          </div>
+          <h3 class="text-lg font-bold text-white">Responses Protected</h3>
+          <p class="text-xs text-amber-200 mt-0.5">Please enter the password to view team responses</p>
+          <button type="button" id="closeAuthModalBtn" class="absolute top-4 right-4 text-white/70 hover:text-white text-base font-bold p-1">✕</button>
+        </div>
+
+        <form id="authForm" class="p-6 space-y-4">
+          <div>
+            <label for="responsesPasswordInput" class="block text-xs font-bold text-slate-800 mb-1">
+              Enter Password
+            </label>
+            <input type="password" id="responsesPasswordInput" required placeholder="Enter password..." class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-sm text-slate-900 font-medium">
+            <p id="authErrorMsg" class="hidden text-xs text-red-600 font-semibold mt-1.5 flex items-center gap-1">
+              <span>⚠️</span>
+              <span>Incorrect password. Access denied.</span>
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2 pt-1">
+            <button type="button" id="cancelAuthBtn" class="w-1/2 py-2.5 rounded-xl border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition-colors">
+              Cancel
+            </button>
+            <button type="submit" id="submitAuthBtn" class="w-1/2 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-xl transition-all shadow-md">
+              Unlock 🔓
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Cloud Sync / Shared Database Settings Modal -->
+    <div id="cloudModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200">
+      <div class="bg-white rounded-2xl max-w-xl w-full shadow-2xl border-2 border-amber-400 overflow-hidden transform scale-95 transition-transform duration-200" id="cloudModalCard">
+        <div class="diwali-gradient text-white p-5 flex items-center justify-between border-b-2 border-amber-500">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center text-xl">
+              ☁️
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-white">Live Centralized Responses (Google Sheets)</h3>
+              <p class="text-xs text-amber-200">Sync all team submissions across all devices in real-time</p>
+            </div>
+          </div>
+          <button type="button" id="closeCloudModalBtn" class="text-white/70 hover:text-white text-lg font-bold p-1">✕</button>
+        </div>
+
+        <div class="p-6 space-y-4 max-h-[80vh] overflow-y-auto text-xs text-slate-700">
+          <div class="p-3.5 rounded-xl bg-blue-50 border border-blue-200 text-blue-900 leading-relaxed">
+            <strong>How Multi-User Sharing Works:</strong> When you share your Render link, each member's responses can save to a free shared Google Sheet. When connected, anyone who fills the form will have their response saved to the sheet, and the <strong>Responses</strong> tab will display everyone's responses!
+          </div>
+
+          <div>
+            <label for="cloudSheetUrlInput" class="block font-bold text-slate-900 mb-1">
+              Google Apps Script Web App URL
+            </label>
+            <input type="url" id="cloudSheetUrlInput" placeholder="https://script.google.com/macros/s/.../exec" class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-amber-500 font-mono text-xs text-slate-800">
+            <p class="text-[11px] text-slate-500 mt-1">Paste your deployed Web App URL here. It will be saved in your browser and used to sync responses.</p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button type="button" id="saveCloudUrlBtn" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl shadow transition-colors">
+              Save &amp; Connect Cloud
+            </button>
+            <button type="button" id="testSyncBtn" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold rounded-xl transition-colors">
+              🔄 Fetch Latest Responses Now
+            </button>
+          </div>
+
+          <!-- 1-Minute Setup Guide -->
+          <div class="pt-3 border-t border-slate-200 space-y-2">
+            <div class="font-bold text-slate-900 flex items-center justify-between">
+              <span>Quick 1-Minute Google Sheets Setup:</span>
+              <button type="button" id="copyAppsScriptBtn" class="text-amber-700 hover:text-amber-800 font-bold text-[11px] underline">
+                📋 Copy Apps Script Code
+              </button>
+            </div>
+            <ol class="list-decimal pl-4 space-y-1 text-slate-600">
+              <li>Create a new Google Sheet at <a href="https://sheets.new" target="_blank" class="text-blue-600 underline">sheets.new</a> named <em>iPath Diwali 2026 RSVPs</em>.</li>
+              <li>Click <strong>Extensions &gt; Apps Script</strong>.</li>
+              <li>Paste the code below, replacing any existing code.</li>
+              <li>Click <strong>Deploy &gt; New deployment</strong>, choose <strong>Web app</strong>.</li>
+              <li>Set <em>Execute as</em> to <strong>Me</strong> and <em>Who has access</em> to <strong>Anyone</strong>.</li>
+              <li>Copy the generated <strong>Web app URL</strong> and paste it above!</li>
+            </ol>
+            <pre class="bg-slate-900 text-amber-200 p-3 rounded-xl overflow-x-auto text-[10px] font-mono leading-tight max-h-36" id="appsScriptCodeBlock">function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  if (data.action === "delete") {
+    var rows = sheet.getDataRange().getValues();
+    for (var i = rows.length - 1; i >= 1; i--) {
+      if (String(rows[i][0]) === String(data.id)) {
+        sheet.deleteRow(i + 1);
+      }
+    }
+    return ContentService.createTextOutput(JSON.stringify({status: "deleted"})).setMimeType(ContentService.MimeType.JSON);
+  }
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(["ID", "Name", "Department", "Attending", "Spouse", "Has Kids", "Bringing Kids", "Kids Count", "Total Headcount", "Timestamp"]);
+  }
+  sheet.appendRow([data.id, data.name, data.department, data.attending, data.spouse, data.hasKids, data.bringingKids, data.kidsCount, data.totalHeadcount, data.createdAt]);
+  return ContentService.createTextOutput(JSON.stringify({status: "success"})).setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var values = sheet.getDataRange().getValues();
+  if (values.length <= 1) return ContentService.createTextOutput(JSON.stringify([])).setMimeType(ContentService.MimeType.JSON);
+  var headers = values[0];
+  var rows = [];
+  for (var i = 1; i < values.length; i++) {
+    var row = values[i];
+    rows.push({
+      id: row[0],
+      name: row[1],
+      department: row[2],
+      attending: row[3],
+      spouse: row[4],
+      hasKids: row[5],
+      bringingKids: row[6],
+      kidsCount: Number(row[7]) || 0,
+      totalHeadcount: Number(row[8]) || 0,
+      createdAt: row[9]
+    });
+  }
+  return ContentService.createTextOutput(JSON.stringify(rows)).setMimeType(ContentService.MimeType.JSON);
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submission Summary Modal (Triggered Upon Each Form Being Filled) -->
+    <div id="summaryModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200">
+      <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl border-2 border-amber-400 overflow-hidden transform scale-95 transition-transform duration-200" id="summaryModalCard">
+        <!-- Modal Header -->
+        <div class="diwali-gradient text-white p-5 text-center relative border-b-2 border-amber-500">
+          <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-amber-500 text-slate-900 text-2xl mb-2 shadow-lg">
+            ✨
+          </div>
+          <h3 class="text-xl font-bold font-festive text-white">RSVP Recorded Successfully!</h3>
+          <p class="text-xs text-amber-200 mt-0.5">Thank you for registering for Diwali Party 2026 (iPath Infotech)</p>
+          <button type="button" id="closeSummaryModalBtn" class="absolute top-4 right-4 text-white/70 hover:text-white text-lg font-bold p-1">✕</button>
+        </div>
+
+        <!-- Modal Body: Detailed Summary -->
+        <div class="p-6 space-y-4">
+          <!-- Member's Submission Breakdown -->
+          <div class="bg-amber-50/60 rounded-xl p-4 border border-amber-200">
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-800 mb-2 flex items-center gap-1.5">
+              <span>📋</span>
+              <span>Your Registration Summary</span>
+            </div>
+            <div class="space-y-1.5 text-xs text-slate-700">
+              <div class="flex justify-between py-1 border-b border-amber-200/60">
+                <span class="text-slate-500">Team Member:</span>
+                <span id="summaryModalName" class="font-bold text-slate-900">-</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-amber-200/60">
+                <span class="text-slate-500">Department:</span>
+                <span id="summaryModalDept" class="font-bold text-amber-800">-</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-amber-200/60">
+                <span class="text-slate-500">Attendance:</span>
+                <span id="summaryModalStatus" class="font-bold text-emerald-700">-</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-amber-200/60">
+                <span class="text-slate-500">Spouse Attendance:</span>
+                <span id="summaryModalSpouse" class="font-semibold text-slate-800">-</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-amber-200/60">
+                <span class="text-slate-500">Kids Attending:</span>
+                <span id="summaryModalKids" class="font-semibold text-slate-800">-</span>
+              </div>
+              <div class="flex justify-between pt-1 font-bold text-sm text-slate-900">
+                <span>Total Members Added from Family:</span>
+                <span id="summaryModalFamilyTotal" class="text-amber-700 text-base font-extrabold">+1 Member</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Overall Company Running Total Summary -->
+          <div class="bg-gradient-to-br from-slate-900 to-purple-950 text-white rounded-xl p-4 border border-amber-500/40">
+            <div class="text-xs font-bold uppercase tracking-wider text-amber-300 mb-1 flex items-center gap-1.5">
+              <span>📈</span>
+              <span>Updated Overall Company Total</span>
+            </div>
+            <div class="flex items-baseline justify-between py-2 border-b border-white/10">
+              <span class="text-xs text-slate-300">New Running Total of Attending Members:</span>
+              <span id="summaryModalRunningTotal" class="text-2xl font-extrabold text-amber-400">0</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 pt-2 text-center text-xs">
+              <div class="bg-white/5 rounded-lg p-2">
+                <div class="text-[10px] text-slate-400">Employees</div>
+                <div id="summaryModalEmployees" class="font-bold text-white text-sm">0</div>
+              </div>
+              <div class="bg-white/5 rounded-lg p-2">
+                <div class="text-[10px] text-slate-400">Spouses</div>
+                <div id="summaryModalSpouses" class="font-bold text-rose-300 text-sm">0</div>
+              </div>
+              <div class="bg-white/5 rounded-lg p-2">
+                <div class="text-[10px] text-slate-400">Kids</div>
+                <div id="summaryModalKidsCount" class="font-bold text-emerald-300 text-sm">0</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Actions -->
+          <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+            <button type="button" id="summaryModalAnotherBtn" class="w-full sm:w-1/2 py-2.5 px-4 rounded-xl border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition-colors">
+              + Register Another Member
+            </button>
+            <button type="button" id="summaryModalViewRosterBtn" class="w-full sm:w-1/2 py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-900 text-xs font-bold transition-all shadow-md">
+              View All Responses →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastNotification" class="fixed top-5 right-5 z-50 transform transition-all duration-300 translate-y-[-120%] opacity-0 pointer-events-none max-w-md w-full bg-white rounded-xl shadow-2xl border-l-4 border-amber-500 p-4 flex items-start gap-3">
+      <div class="p-2 rounded-full bg-amber-100 text-amber-700 mt-0.5">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <div class="flex-grow">
+        <h4 id="toastTitle" class="text-sm font-bold text-slate-900">Success</h4>
+        <p id="toastMessage" class="text-xs text-slate-600 mt-0.5">Your response has been recorded.</p>
+      </div>
+      <button id="toastCloseBtn" type="button" class="text-slate-400 hover:text-slate-600 text-sm font-bold p-1">✕</button>
+    </div>
+
+    <!-- VIEW 1: REGISTRATION FORM -->
+    <div id="registerView" class="space-y-6">
+      
+      <!-- Festive Welcome Banner -->
+      <div class="bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-amber-500/15 border border-amber-200/80 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-3xl shadow-md shrink-0">
+          🪔
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-lg font-bold text-slate-900">Diwali 2026 Celebration with iPath Family!</h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Let us celebrate the festival of lights with joy, music, delicious feast, and togetherness. Please fill out your availability by selecting whether you are joining alone or with your spouse, and details about your kids so our organizing committee can prepare the catering and arrangements.
+          </p>
+        </div>
+        <div class="shrink-0 bg-white/80 backdrop-blur px-4 py-2.5 rounded-xl border border-amber-300 text-center shadow-sm">
+          <div class="text-[11px] uppercase tracking-wider text-amber-800 font-semibold">Event Date</div>
+          <div class="text-base font-bold text-slate-900">28 Nov 2026</div>
+        </div>
+      </div>
+
+      <!-- Registration Form Card -->
+      <div class="bg-white rounded-2xl shadow-xl border border-amber-100 overflow-hidden card-glow">
+        <div class="bg-gradient-to-r from-amber-600 to-amber-700 py-3.5 px-6 text-white flex items-center justify-between">
+          <span class="text-sm font-semibold tracking-wide uppercase flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-200" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+            </svg>
+            Member Availability Form
+          </span>
+          <span class="text-xs bg-amber-500/40 text-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300/40">iPath Infotech Pvt Ltd</span>
+        </div>
+
+        <form id="rsvpForm" class="p-6 sm:p-8 space-y-6">
+
+          <!-- 1. Team Member Name -->
+          <div>
+            <label for="memberName" class="block text-sm font-semibold text-slate-900 mb-1.5">
+              1. Team Member Full Name <span class="text-red-500">*</span>
+            </label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+              </div>
+              <input type="text" id="memberName" name="memberName" required placeholder="e.g., Rajesh Patel, Priya Sharma" class="w-full pl-11 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors text-slate-900 font-medium text-sm">
+            </div>
+            <p class="text-xs text-slate-500 mt-1">Please enter your name as registered in the company roster.</p>
+          </div>
+
+          <!-- 2. Department -->
+          <div>
+            <label for="memberDepartment" class="block text-sm font-semibold text-slate-900 mb-1.5">
+              2. Department <span class="text-red-500">*</span>
+            </label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <select id="memberDepartment" name="memberDepartment" required class="w-full pl-11 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors text-slate-900 font-medium text-sm">
+                <option value="" disabled selected>Select your department</option>
+                <option value="Bellrock CSEC Helpdesk">Bellrock CSEC Helpdesk</option>
+                <option value="Bellrock P&amp;SC">Bellrock P&amp;SC</option>
+                <option value="Bellrock Credit Controllers">Bellrock Credit Controllers</option>
+                <option value="Bellrock CSEC Support">Bellrock CSEC Support</option>
+                <option value="ACCUGRIT/Outco/Clearway">ACCUGRIT/Outco/Clearway</option>
+                <option value="Bellrock CE&amp;WSCC">Bellrock CE&amp;WSCC</option>
+                <option value="Suresh MISC. Departments">Suresh MISC. Departments</option>
+                <option value="Bellrock TRE">Bellrock TRE</option>
+                <option value="Bellrock CAP/Finance">Bellrock CAP/Finance</option>
+                <option value="US ACCOUNTS TEAM">US ACCOUNTS TEAM</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">Select your team or department at iPath Infotech.</p>
+          </div>
+
+          <!-- Attendance Confirmation (Yes / No) -->
+          <div>
+            <label class="block text-sm font-semibold text-slate-900 mb-2">
+              3. Will you be attending the Diwali Party on 28th Nov 2026? <span class="text-red-500">*</span>
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="radio-card relative">
+                <input type="radio" id="attendYes" name="attendingStatus" value="yes" checked class="peer sr-only">
+                <label for="attendYes" class="flex items-center gap-3 p-3.5 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all duration-150">
+                  <span class="text-xl">🎉</span>
+                  <div class="flex-grow">
+                    <div class="text-sm font-semibold text-slate-900">Yes, Count Me In!</div>
+                    <div class="text-xs text-slate-500">I will celebrate with the team</div>
+                  </div>
+                  <span class="check-icon opacity-0 scale-75 text-amber-600 transition-all duration-150">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  </span>
+                </label>
+              </div>
+
+              <div class="radio-card relative">
+                <input type="radio" id="attendNo" name="attendingStatus" value="no" class="peer sr-only">
+                <label for="attendNo" class="flex items-center gap-3 p-3.5 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all duration-150">
+                  <span class="text-xl">🙏</span>
+                  <div class="flex-grow">
+                    <div class="text-sm font-semibold text-slate-900">Regretfully Cannot Attend</div>
+                    <div class="text-xs text-slate-500">Unable to join this time</div>
+                  </div>
+                  <span class="check-icon opacity-0 scale-75 text-amber-600 transition-all duration-150">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- ATTENDEE SPECIFIC QUESTIONS CONTAINER (Hidden if "Cannot Attend") -->
+          <div id="attendeeDetailsSection" class="space-y-6 pt-2 border-t border-slate-100">
+
+            <!-- 3. Coming with Spouse or Alone -->
+            <div class="bg-amber-50/40 p-4 rounded-2xl border border-amber-200/60">
+              <label class="block text-sm font-semibold text-slate-900 mb-1.5">
+                4. Are you coming with your spouse or alone? <span class="text-red-500">*</span>
+              </label>
+              <p class="text-xs text-slate-500 mb-3">Please specify if your spouse will accompany you.</p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="radio-card relative">
+                  <input type="radio" id="spouseAlone" name="spouseOption" value="alone" checked class="peer sr-only">
+                  <label for="spouseAlone" class="flex items-center gap-3 p-3.5 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="w-9 h-9 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm shrink-0">
+                      👤
+                    </div>
+                    <div class="flex-grow">
+                      <div class="text-sm font-semibold text-slate-900">Attending Alone</div>
+                      <div class="text-xs text-slate-500">Just myself (1 person)</div>
+                    </div>
+                    <span class="check-icon opacity-0 scale-75 text-amber-600 transition-all">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="radio-card relative">
+                  <input type="radio" id="spouseWith" name="spouseOption" value="with_spouse" class="peer sr-only">
+                  <label for="spouseWith" class="flex items-center gap-3 p-3.5 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all">
+                    <div class="w-9 h-9 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center font-bold text-sm shrink-0">
+                      👫
+                    </div>
+                    <div class="flex-grow">
+                      <div class="text-sm font-semibold text-slate-900">Coming with Spouse</div>
+                      <div class="text-xs text-slate-500">Myself + My Spouse (2 people)</div>
+                    </div>
+                    <span class="check-icon opacity-0 scale-75 text-amber-600 transition-all">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Kids Section -->
+            <div class="bg-amber-50/40 p-4 rounded-2xl border border-amber-200/60 space-y-4">
+              <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-1.5">
+                  5. Do you have kids? <span class="text-red-500">*</span>
+                </label>
+                <div class="grid grid-cols-2 gap-3 max-w-sm">
+                  <div class="radio-card relative">
+                    <input type="radio" id="hasKidsYes" name="hasKids" value="yes" class="peer sr-only">
+                    <label for="hasKidsYes" class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer text-sm font-semibold text-slate-800 transition-all">
+                      <span>👶 Yes, I have kids</span>
+                      <span class="check-icon opacity-0 scale-75 text-amber-600">✓</span>
+                    </label>
+                  </div>
+                  <div class="radio-card relative">
+                    <input type="radio" id="hasKidsNo" name="hasKids" value="no" checked class="peer sr-only">
+                    <label for="hasKidsNo" class="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer text-sm font-semibold text-slate-800 transition-all">
+                      <span>No kids</span>
+                      <span class="check-icon opacity-0 scale-75 text-amber-600">✓</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4b. Coming with kids or without kids (Visible ONLY if hasKids == 'yes') -->
+              <div id="bringingKidsContainer" class="hidden pt-3 border-t border-amber-200/60">
+                <label class="block text-sm font-semibold text-slate-900 mb-1.5">
+                  5b. Are you coming with kids or without kids? <span class="text-red-500">*</span>
+                </label>
+                <p class="text-xs text-slate-500 mb-2.5">Will your children be joining you at the Diwali venue?</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div class="radio-card relative">
+                    <input type="radio" id="bringingKidsYes" name="bringingKidsOption" value="with_kids" class="peer sr-only">
+                    <label for="bringingKidsYes" class="flex items-center gap-3 p-3.5 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all">
+                      <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm font-bold shrink-0">
+                        🎈
+                      </div>
+                      <div class="flex-grow">
+                        <div class="text-sm font-semibold text-slate-900">Coming With Kids</div>
+                        <div class="text-xs text-slate-500">My kids will join the celebrations</div>
+                      </div>
+                      <span class="check-icon opacity-0 scale-75 text-amber-600">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="radio-card relative">
+                    <input type="radio" id="bringingKidsNo" name="bringingKidsOption" value="without_kids" checked class="peer sr-only">
+                    <label for="bringingKidsNo" class="flex items-center gap-3 p-3.5 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all">
+                      <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-sm font-bold shrink-0">
+                        🚫
+                      </div>
+                      <div class="flex-grow">
+                        <div class="text-sm font-semibold text-slate-900">Coming Without Kids</div>
+                        <div class="text-xs text-slate-500">Kids will stay at home</div>
+                      </div>
+                      <span class="check-icon opacity-0 scale-75 text-amber-600">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4c. Number of Kids (Numeric 1, 2, or 3) (Visible ONLY if bringingKidsOption == 'with_kids') -->
+              <div id="kidsCountContainer" class="hidden pt-3 border-t border-amber-200/60 bg-amber-100/40 p-4 rounded-xl">
+                <label class="block text-sm font-semibold text-slate-900 mb-1.5">
+                  5c. How many kids are joining? (Select numeric count: 1, 2, or 3) <span class="text-red-500">*</span>
+                </label>
+                <p class="text-xs text-slate-500 mb-3">Please specify the exact number of children attending for gifts and games planning:</p>
+
+                <div class="grid grid-cols-3 gap-3 max-w-md">
+                  <!-- 1 Kid -->
+                  <div class="radio-card relative">
+                    <input type="radio" id="kidsCount1" name="kidsCountOption" value="1" checked class="peer sr-only">
+                    <label for="kidsCount1" class="flex flex-col items-center justify-center py-3 px-2 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all text-center">
+                      <span class="text-2xl font-bold text-amber-600">1</span>
+                      <span class="text-xs font-semibold text-slate-700 mt-0.5">1 Kid</span>
+                      <span class="check-icon opacity-0 scale-75 text-amber-600 text-xs font-bold mt-1">Selected</span>
+                    </label>
+                  </div>
+
+                  <!-- 2 Kids -->
+                  <div class="radio-card relative">
+                    <input type="radio" id="kidsCount2" name="kidsCountOption" value="2" class="peer sr-only">
+                    <label for="kidsCount2" class="flex flex-col items-center justify-center py-3 px-2 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all text-center">
+                      <span class="text-2xl font-bold text-amber-600">2</span>
+                      <span class="text-xs font-semibold text-slate-700 mt-0.5">2 Kids</span>
+                      <span class="check-icon opacity-0 scale-75 text-amber-600 text-xs font-bold mt-1">Selected</span>
+                    </label>
+                  </div>
+
+                  <!-- 3 Kids -->
+                  <div class="radio-card relative">
+                    <input type="radio" id="kidsCount3" name="kidsCountOption" value="3" class="peer sr-only">
+                    <label for="kidsCount3" class="flex flex-col items-center justify-center py-3 px-2 rounded-xl border-2 border-slate-200 bg-white hover:bg-slate-50 cursor-pointer transition-all text-center">
+                      <span class="text-2xl font-bold text-amber-600">3</span>
+                      <span class="text-xs font-semibold text-slate-700 mt-0.5">3 Kids</span>
+                      <span class="check-icon opacity-0 scale-75 text-amber-600 text-xs font-bold mt-1">Selected</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <!-- Live RSVP Summary Calculation Box -->
+            <div class="bg-gradient-to-r from-amber-500 to-amber-600 text-white p-4 rounded-xl shadow-md flex items-center justify-between">
+              <div>
+                <div class="text-xs uppercase font-medium tracking-wider text-amber-100">Calculated Total Members for Your Family</div>
+                <div id="liveAttendeeBreakdown" class="text-sm font-semibold mt-0.5">1 Person (Self)</div>
+              </div>
+              <div class="text-right">
+                <div class="text-xs text-amber-200">Total Members</div>
+                <div id="liveTotalCount" class="text-2xl font-extrabold text-white">1</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Decline Message Preview (Only when "Cannot Attend" is selected) -->
+          <div id="declineNotice" class="hidden p-4 rounded-xl bg-slate-100 border border-slate-200 text-slate-600 text-sm">
+            <p><strong>Note:</strong> We will miss you at the celebration! Your response will help us account for absent members and avoid food wastage.</p>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-end gap-3">
+            <button type="button" id="resetFormBtn" class="w-full sm:w-auto px-5 py-2.5 border border-slate-300 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-100 transition-colors">
+              Reset Form
+            </button>
+            <button type="submit" id="submitRsvpBtn" class="w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 text-white rounded-xl text-sm font-bold shadow-lg hover:from-amber-600 hover:to-orange-700 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+              <span>Submit Availability RSVP</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Running Total of Total Members at the Bottom -->
+      <div id="runningTotalCardBottom" class="bg-gradient-to-r from-purple-950 via-slate-900 to-purple-950 text-white p-5 rounded-2xl border-2 border-amber-500/40 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4 card-glow">
+        <div class="flex items-center gap-3.5 w-full sm:w-auto">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-400/40 text-amber-400 flex items-center justify-center text-2xl shrink-0">
+            👥
+          </div>
+          <div class="flex-grow">
+            <div class="flex items-center gap-2">
+              <span class="text-xs uppercase tracking-wider font-semibold text-amber-300">Live Registration Counter</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-400/30">iPath Infotech</span>
+            </div>
+            <div class="text-base sm:text-lg font-bold text-white flex items-center gap-2 mt-0.5">
+              <span>Running Total of Attending Members:</span>
+              <span id="runningTotalMembersBottom" class="text-amber-400 font-extrabold text-2xl">0</span>
+            </div>
+            <div id="runningTotalBreakdownBottom" class="text-xs text-slate-300 mt-1">
+              Registered RSVPs: <span id="runningRsvpCount" class="font-bold text-white">0</span> • Employees: <span id="runningEmpCount" class="font-bold text-white">0</span> • Spouses: <span id="runningSpouseCount" class="font-bold text-white">0</span> • Kids: <span id="runningKidsCount" class="font-bold text-white">0</span>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="viewFullRosterBtn" class="w-full sm:w-auto px-4 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl text-xs font-bold transition-all shadow-md flex items-center justify-center gap-1.5 shrink-0">
+          <span>View Team Roster</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- VIEW 2: TEAM DASHBOARD & ROSTER -->
+    <div id="dashboardView" class="hidden space-y-6">
+
+      <!-- Stats Overview Row -->
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
+        <!-- Total Responses -->
+        <div class="bg-white p-4 rounded-2xl border border-amber-200 shadow-sm flex flex-col justify-between">
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Total Responses</div>
+          <div class="mt-2 flex items-baseline justify-between">
+            <div id="kpiTotalResponses" class="text-2xl sm:text-3xl font-extrabold text-slate-900">0</div>
+            <span class="text-amber-500 text-lg">📋</span>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-1">Submitted RSVPs</div>
+        </div>
+
+        <!-- Total Headcount -->
+        <div class="bg-gradient-to-br from-amber-500 to-amber-600 text-white p-4 rounded-2xl shadow-md flex flex-col justify-between col-span-2 sm:col-span-1">
+          <div class="text-xs font-semibold text-amber-100 uppercase tracking-wide">Total Headcount</div>
+          <div class="mt-2 flex items-baseline justify-between">
+            <div id="kpiTotalHeadcount" class="text-2xl sm:text-3xl font-extrabold text-white">0</div>
+            <span class="text-amber-200 text-lg">🍽️</span>
+          </div>
+          <div class="text-[11px] text-amber-100 mt-1">Adults + Kids for Dinner</div>
+        </div>
+
+        <!-- Attending Team Members -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Employees</div>
+          <div class="mt-2 flex items-baseline justify-between">
+            <div id="kpiAttendingEmployees" class="text-2xl sm:text-3xl font-extrabold text-slate-900">0</div>
+            <span class="text-blue-500 text-lg">💼</span>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-1">Attending members</div>
+        </div>
+
+        <!-- Spouses Joining -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Spouses</div>
+          <div class="mt-2 flex items-baseline justify-between">
+            <div id="kpiTotalSpouses" class="text-2xl sm:text-3xl font-extrabold text-rose-600">0</div>
+            <span class="text-rose-500 text-lg">👫</span>
+          </div>
+          <div class="text-[11px] text-slate-400 mt-1">Coming with spouse</div>
+        </div>
+
+        <!-- Kids Joining -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Kids Attending</div>
+          <div class="mt-2 flex items-baseline justify-between">
+            <div id="kpiTotalKids" class="text-2xl sm:text-3xl font-extrabold text-emerald-600">0</div>
+            <span class="text-emerald-500 text-lg">🎈</span>
+          </div>
+          <div id="kpiKidsBreakdownText" class="text-[11px] text-slate-500 mt-1">1k: 0 | 2k: 0 | 3k: 0</div>
+        </div>
+      </div>
+
+      <!-- Detail Breakdowns Card -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-4">
+        <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide flex items-center gap-2">
+          <span>📊</span>
+          <span>Attendance & Kids Breakdown</span>
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Attendance Ratio -->
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+            <div class="text-xs font-semibold text-slate-600 mb-2">Spouse Attendance Distribution</div>
+            <div class="flex items-center justify-between text-xs text-slate-700 py-1 border-b border-slate-200">
+              <span class="flex items-center gap-1.5">👤 Attending Alone</span>
+              <strong id="statAloneCount" class="font-bold">0</strong>
+            </div>
+            <div class="flex items-center justify-between text-xs text-slate-700 py-1 border-b border-slate-200">
+              <span class="flex items-center gap-1.5">👫 Coming with Spouse</span>
+              <strong id="statWithSpouseCount" class="font-bold">0</strong>
+            </div>
+            <div class="flex items-center justify-between text-xs text-slate-500 py-1">
+              <span>🚫 Not Attending</span>
+              <strong id="statDeclineCount" class="font-bold">0</strong>
+            </div>
+          </div>
+
+          <!-- Kids Numerical Distribution -->
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+            <div class="text-xs font-semibold text-slate-600 mb-2">Kids Attendance Breakdown</div>
+            <div class="flex items-center justify-between text-xs text-slate-700 py-1 border-b border-slate-200">
+              <span>Bringing 1 Kid</span>
+              <span class="font-semibold text-slate-900"><strong id="statKid1Count">0</strong> families (<span id="statKid1Sum">0</span> kids)</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-slate-700 py-1 border-b border-slate-200">
+              <span>Bringing 2 Kids</span>
+              <span class="font-semibold text-slate-900"><strong id="statKid2Count">0</strong> families (<span id="statKid2Sum">0</span> kids)</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-slate-700 py-1">
+              <span>Bringing 3 Kids</span>
+              <span class="font-semibold text-slate-900"><strong id="statKid3Count">0</strong> families (<span id="statKid3Sum">0</span> kids)</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Attendee Table Section -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <!-- Table Toolbar -->
+        <div class="p-4 sm:p-5 border-b border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 bg-slate-50/50">
+          <div class="w-full sm:w-72 relative">
+            <input type="text" id="searchTableInput" placeholder="Search by member name..." class="w-full pl-9 pr-3 py-2 text-xs bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-slate-900">
+            <span class="absolute left-3 top-2.5 text-slate-400">🔍</span>
+          </div>
+
+          <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+            <select id="filterAttendanceSelect" class="text-xs py-2 px-3 bg-white border border-slate-300 rounded-xl focus:ring-amber-500 focus:border-amber-500 text-slate-700">
+              <option value="all">All Responses</option>
+              <option value="attending">Attending Only</option>
+              <option value="with_spouse">With Spouse</option>
+              <option value="alone">Alone</option>
+              <option value="with_kids">With Kids</option>
+              <option value="not_attending">Declined</option>
+            </select>
+
+            <button type="button" id="refreshCloudBtn" class="px-3.5 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-xl text-xs font-semibold shadow-sm transition-colors flex items-center gap-1.5 shrink-0" title="Fetch latest responses from shared Google Sheet">
+              <span>🔄 Refresh Live</span>
+            </button>
+            <button type="button" id="exportCsvBtn" class="px-3.5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-semibold shadow-sm transition-colors flex items-center gap-1.5 shrink-0">
+              <span>📥 Export CSV</span>
+            </button>
+
+            <button type="button" id="loadSampleDataBtn" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 rounded-xl text-xs font-medium transition-colors shrink-0" title="Populate realistic sample responses from iPath Infotech team">
+              Sample Data
+            </button>
+            <button type="button" id="lockResponsesBtn" class="px-3 py-2 bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-700 rounded-xl text-xs font-medium border border-slate-200 transition-colors shrink-0" title="Lock responses tab">
+              🔒 Lock
+            </button>
+          </div>
+        </div>
+
+        <!-- Responsive Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs text-slate-600">
+            <thead class="bg-slate-100 text-slate-700 uppercase font-bold text-[10px] tracking-wider border-b border-slate-200">
+              <tr>
+                <th class="py-3 px-4">#</th>
+                <th class="py-3 px-4">Team Member</th>
+                <th class="py-3 px-4">Department</th>
+                <th class="py-3 px-4">Status</th>
+                <th class="py-3 px-4">Spouse / Companion</th>
+                <th class="py-3 px-4">Kids Details</th>
+                <th class="py-3 px-4 text-center">Total Headcount</th>
+                <th class="py-3 px-4 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="attendeeTableBody" class="divide-y divide-slate-100 font-medium">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Empty State in Table -->
+        <div id="tableEmptyState" class="hidden py-12 text-center text-slate-400">
+          <div class="text-4xl mb-2">📋</div>
+          <p class="text-sm font-semibold text-slate-600">No registration records found</p>
+          <p class="text-xs text-slate-400 mt-1">Submit an RSVP or click "Sample Data" above to view records.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-6 px-4 text-center text-xs text-slate-500 mt-auto">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+        <span>Diwali Celebration Registration Portal • <strong>iPath Infotech Private Limited</strong></span>
+      </div>
+      <div>Event Date: <strong>28th November 2026</strong></div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT LOGIC -->
+  <script>
+    // State management
+    const STORAGE_KEY = 'ipath_diwali_rsvp_2026_records';
+    let responses = [];
+
+    // Pre-loaded realistic sample data for iPath Infotech Pvt Ltd team
+    const sampleRoster = [
+      {
+        id: 'resp_1',
+        name: 'Amit Shah',
+        department: 'Bellrock CSEC Helpdesk',
+        attending: 'yes',
+        spouse: 'with_spouse',
+        hasKids: 'yes',
+        bringingKids: 'with_kids',
+        kidsCount: 2,
+        totalHeadcount: 4, // 1 Self + 1 Spouse + 2 Kids
+        createdAt: '2026-11-10T10:15:00Z'
+      },
+      {
+        id: 'resp_2',
+        name: 'Neha Verma',
+        department: 'Bellrock P&SC',
+        attending: 'yes',
+        spouse: 'alone',
+        hasKids: 'no',
+        bringingKids: 'without_kids',
+        kidsCount: 0,
+        totalHeadcount: 1, // 1 Self
+        createdAt: '2026-11-10T11:30:00Z'
+      },
+      {
+        id: 'resp_3',
+        name: 'Vikram Joshi',
+        department: 'ACCUGRIT/Outco/Clearway',
+        attending: 'yes',
+        spouse: 'with_spouse',
+        hasKids: 'yes',
+        bringingKids: 'with_kids',
+        kidsCount: 1,
+        totalHeadcount: 3, // 1 Self + 1 Spouse + 1 Kid
+        createdAt: '2026-11-10T14:45:00Z'
+      },
+      {
+        id: 'resp_4',
+        name: 'Sneha Kulkarni',
+        department: 'Bellrock Credit Controllers',
+        attending: 'yes',
+        spouse: 'with_spouse',
+        hasKids: 'yes',
+        bringingKids: 'without_kids',
+        kidsCount: 0,
+        totalHeadcount: 2, // 1 Self + 1 Spouse
+        createdAt: '2026-11-11T09:20:00Z'
+      },
+      {
+        id: 'resp_5',
+        name: 'Rohan Mehra',
+        department: 'Bellrock CAP/Finance',
+        attending: 'yes',
+        spouse: 'alone',
+        hasKids: 'yes',
+        bringingKids: 'with_kids',
+        kidsCount: 3,
+        totalHeadcount: 4, // 1 Self + 3 Kids
+        createdAt: '2026-11-11T12:05:00Z'
+      },
+      {
+        id: 'resp_6',
+        name: 'Deepak Patel',
+        department: 'US ACCOUNTS TEAM',
+        attending: 'no',
+        spouse: 'alone',
+        hasKids: 'no',
+        bringingKids: 'without_kids',
+        kidsCount: 0,
+        totalHeadcount: 0,
+        createdAt: '2026-11-11T15:00:00Z'
+      }
+    ];
+
+    // Load initial data
+    function loadResponses() {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) {
+          responses = JSON.parse(stored);
+        } else {
+          // Initialize with sample roster
+          responses = [...sampleRoster];
+          saveResponses();
+        }
+      } catch (err) {
+        responses = [...sampleRoster];
+      }
+    }
+
+    function saveResponses() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(responses));
+      } catch (err) {
+        console.warn('Storage error:', err);
+      }
+    }
+
+    // Tab Navigation
+    const tabRegisterBtn = document.getElementById('tabRegisterBtn');
+    const tabDashboardBtn = document.getElementById('tabDashboardBtn');
+    const registerView = document.getElementById('registerView');
+    const dashboardView = document.getElementById('dashboardView');
+
+
+    // ==========================================
+    // PASSWORD PROTECTION FOR RESPONSES VIEW
+    // ==========================================
+    const RESPONSES_PASSWORD = 'everyone';
+    const AUTH_STORAGE_KEY = 'ipath_responses_auth_unlocked';
+    let isAuthorized = false;
+
+    try {
+      isAuthorized = sessionStorage.getItem(AUTH_STORAGE_KEY) === 'true';
+    } catch(e) {
+      isAuthorized = false;
+    }
+
+    const authModal = document.getElementById('authModal');
+    const authModalCard = document.getElementById('authModalCard');
+    const closeAuthModalBtn = document.getElementById('closeAuthModalBtn');
+    const cancelAuthBtn = document.getElementById('cancelAuthBtn');
+    const authForm = document.getElementById('authForm');
+    const responsesPasswordInput = document.getElementById('responsesPasswordInput');
+    const authErrorMsg = document.getElementById('authErrorMsg');
+    const lockResponsesBtn = document.getElementById('lockResponsesBtn');
+
+    function openAuthModal() {
+      authErrorMsg.classList.add('hidden');
+      responsesPasswordInput.value = '';
+      authModal.classList.remove('hidden');
+      setTimeout(() => {
+        authModal.classList.remove('opacity-0');
+        authModalCard.classList.remove('scale-95');
+        authModalCard.classList.add('scale-100');
+        responsesPasswordInput.focus();
+      }, 10);
+    }
+
+    function hideAuthModal() {
+      authModal.classList.add('opacity-0');
+      authModalCard.classList.remove('scale-100');
+      authModalCard.classList.add('scale-95');
+      setTimeout(() => {
+        authModal.classList.add('hidden');
+      }, 200);
+    }
+
+    closeAuthModalBtn.addEventListener('click', hideAuthModal);
+    cancelAuthBtn.addEventListener('click', hideAuthModal);
+
+    authForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const entered = responsesPasswordInput.value.trim();
+      if (entered === RESPONSES_PASSWORD) {
+        isAuthorized = true;
+        try {
+          sessionStorage.setItem(AUTH_STORAGE_KEY, 'true');
+        } catch(e) {}
+        hideAuthModal();
+        doSwitchToDashboard();
+        showToast('Access Granted', 'Responses tab unlocked successfully.');
+      } else {
+        authErrorMsg.classList.remove('hidden');
+        responsesPasswordInput.select();
+      }
+    });
+
+    if (lockResponsesBtn) {
+      lockResponsesBtn.addEventListener('click', () => {
+        isAuthorized = false;
+        try {
+          sessionStorage.removeItem(AUTH_STORAGE_KEY);
+        } catch(e) {}
+        switchTab('register');
+        showToast('Responses Locked', 'You must enter the password again to view responses.');
+      });
+    }
+
+    function requestDashboardAccess() {
+      if (isAuthorized) {
+        doSwitchToDashboard();
+      } else {
+        openAuthModal();
+      }
+    }
+
+    function doSwitchToDashboard() {
+      registerView.classList.add('hidden');
+      dashboardView.classList.remove('hidden');
+      tabDashboardBtn.className = 'px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 bg-amber-500 text-slate-900 shadow-md';
+      tabRegisterBtn.className = 'px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-amber-200 hover:text-white hover:bg-white/10';
+      renderDashboard();
+    }
+
+    function switchTab(target) {
+      if (target === 'register') {
+        registerView.classList.remove('hidden');
+        dashboardView.classList.add('hidden');
+        tabRegisterBtn.className = 'px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 bg-amber-500 text-slate-900 shadow-md';
+        tabDashboardBtn.className = 'px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-amber-200 hover:text-white hover:bg-white/10';
+      } else {
+        requestDashboardAccess();
+      }
+    }
+
+    tabRegisterBtn.addEventListener('click', () => switchTab('register'));
+    tabDashboardBtn.addEventListener('click', () => switchTab('dashboard'));
+
+    // Dynamic Form Visibility and Calculations
+    const attendYesRadio = document.getElementById('attendYes');
+    const attendNoRadio = document.getElementById('attendNo');
+    const attendeeDetailsSection = document.getElementById('attendeeDetailsSection');
+    const declineNotice = document.getElementById('declineNotice');
+
+    const spouseAloneRadio = document.getElementById('spouseAlone');
+    const spouseWithRadio = document.getElementById('spouseWith');
+
+    const hasKidsYesRadio = document.getElementById('hasKidsYes');
+    const hasKidsNoRadio = document.getElementById('hasKidsNo');
+    const bringingKidsContainer = document.getElementById('bringingKidsContainer');
+
+    const bringingKidsYesRadio = document.getElementById('bringingKidsYes');
+    const bringingKidsNoRadio = document.getElementById('bringingKidsNo');
+    const kidsCountContainer = document.getElementById('kidsCountContainer');
+
+    const liveAttendeeBreakdown = document.getElementById('liveAttendeeBreakdown');
+    const liveTotalCount = document.getElementById('liveTotalCount');
+
+    function updateFormLogic() {
+      const isAttending = attendYesRadio.checked;
+      
+      if (!isAttending) {
+        attendeeDetailsSection.classList.add('hidden');
+        declineNotice.classList.remove('hidden');
+        liveTotalCount.textContent = '0';
+        liveAttendeeBreakdown.textContent = 'Not Attending';
+        return;
+      }
+
+      attendeeDetailsSection.classList.remove('hidden');
+      declineNotice.classList.add('hidden');
+
+      // Kids logic:
+      const hasKids = hasKidsYesRadio.checked;
+      if (hasKids) {
+        bringingKidsContainer.classList.remove('hidden');
+      } else {
+        bringingKidsContainer.classList.add('hidden');
+        // Reset bringing kids to without kids
+        bringingKidsNoRadio.checked = true;
+      }
+
+      const bringingKids = hasKids && bringingKidsYesRadio.checked;
+      if (bringingKids) {
+        kidsCountContainer.classList.remove('hidden');
+      } else {
+        kidsCountContainer.classList.add('hidden');
+      }
+
+      // Calculate headcount
+      let count = 1; // Self
+      let breakdownParts = ['1 Team Member (Self)'];
+
+      if (spouseWithRadio.checked) {
+        count += 1;
+        breakdownParts.push('1 Spouse');
+      }
+
+      if (bringingKids) {
+        let kidsNum = 1;
+        if (document.getElementById('kidsCount2').checked) kidsNum = 2;
+        if (document.getElementById('kidsCount3').checked) kidsNum = 3;
+        count += kidsNum;
+        breakdownParts.push(`${kidsNum} Kid${kidsNum > 1 ? 's' : ''}`);
+      }
+
+      liveTotalCount.textContent = count.toString();
+      liveAttendeeBreakdown.textContent = breakdownParts.join(' + ');
+    }
+
+    // Attach change listeners to all radios
+    const allRadios = [
+      attendYesRadio, attendNoRadio,
+      spouseAloneRadio, spouseWithRadio,
+      hasKidsYesRadio, hasKidsNoRadio,
+      bringingKidsYesRadio, bringingKidsNoRadio,
+      document.getElementById('kidsCount1'),
+      document.getElementById('kidsCount2'),
+      document.getElementById('kidsCount3')
+    ];
+
+    allRadios.forEach(radio => {
+      radio.addEventListener('change', updateFormLogic);
+    });
+
+    // Form submission
+    const rsvpForm = document.getElementById('rsvpForm');
+    const memberNameInput = document.getElementById('memberName');
+
+
+    // Running Total Calculator and Sync
+    function updateRunningTotals() {
+      let runningTotal = 0;
+      let totalEmployees = 0;
+      let totalSpouses = 0;
+      let totalKids = 0;
+      let totalRsvps = responses.length;
+
+      responses.forEach(r => {
+        if (r.attending === 'yes') {
+          totalEmployees += 1;
+          runningTotal += (r.totalHeadcount || 1);
+          if (r.spouse === 'with_spouse') totalSpouses += 1;
+          if (r.bringingKids === 'with_kids') totalKids += (parseInt(r.kidsCount, 10) || 0);
+        }
+      });
+
+      const runningElem = document.getElementById('runningTotalMembersBottom');
+      if (runningElem) runningElem.textContent = runningTotal.toString();
+      const rsvpElem = document.getElementById('runningRsvpCount');
+      if (rsvpElem) rsvpElem.textContent = totalRsvps.toString();
+      const empElem = document.getElementById('runningEmpCount');
+      if (empElem) empElem.textContent = totalEmployees.toString();
+      const spouseElem = document.getElementById('runningSpouseCount');
+      if (spouseElem) spouseElem.textContent = totalSpouses.toString();
+      const kidsElem = document.getElementById('runningKidsCount');
+      if (kidsElem) kidsElem.textContent = totalKids.toString();
+
+      return { runningTotal, totalEmployees, totalSpouses, totalKids, totalRsvps };
+    }
+
+    // Modal display for summary upon each form being filled
+    const summaryModal = document.getElementById('summaryModal');
+    const summaryModalCard = document.getElementById('summaryModalCard');
+    const closeSummaryModalBtn = document.getElementById('closeSummaryModalBtn');
+    const summaryModalAnotherBtn = document.getElementById('summaryModalAnotherBtn');
+    const summaryModalViewRosterBtn = document.getElementById('summaryModalViewRosterBtn');
+    const viewFullRosterBtn = document.getElementById('viewFullRosterBtn');
+
+    function showSubmissionSummary(entry) {
+      const totals = updateRunningTotals();
+
+      document.getElementById('summaryModalName').textContent = entry.name;
+      document.getElementById('summaryModalDept').textContent = entry.department || 'General';
+      
+      if (entry.attending === 'yes') {
+        document.getElementById('summaryModalStatus').textContent = 'Attending (Yes)';
+        document.getElementById('summaryModalStatus').className = 'font-bold text-emerald-700';
+        document.getElementById('summaryModalSpouse').textContent = entry.spouse === 'with_spouse' ? 'Coming With Spouse (+1)' : 'Attending Alone';
+        
+        let kidsDesc = 'No kids joining';
+        if (entry.hasKids === 'yes' && entry.bringingKids === 'with_kids') {
+          kidsDesc = `Joining with ${entry.kidsCount} Kid${entry.kidsCount > 1 ? 's' : ''}`;
+        } else if (entry.hasKids === 'yes') {
+          kidsDesc = 'Has kids, but attending without kids';
+        }
+        document.getElementById('summaryModalKids').textContent = kidsDesc;
+        document.getElementById('summaryModalFamilyTotal').textContent = `+${entry.totalHeadcount} Member${entry.totalHeadcount > 1 ? 's' : ''}`;
+      } else {
+        document.getElementById('summaryModalStatus').textContent = 'Declined (Not Attending)';
+        document.getElementById('summaryModalStatus').className = 'font-bold text-slate-500';
+        document.getElementById('summaryModalSpouse').textContent = 'N/A';
+        document.getElementById('summaryModalKids').textContent = 'N/A';
+        document.getElementById('summaryModalFamilyTotal').textContent = '0 Members';
+      }
+
+      document.getElementById('summaryModalRunningTotal').textContent = totals.runningTotal.toString() + ' Members';
+      document.getElementById('summaryModalEmployees').textContent = totals.totalEmployees.toString();
+      document.getElementById('summaryModalSpouses').textContent = totals.totalSpouses.toString();
+      document.getElementById('summaryModalKidsCount').textContent = totals.totalKids.toString();
+
+      summaryModal.classList.remove('hidden');
+      setTimeout(() => {
+        summaryModal.classList.remove('opacity-0');
+        summaryModalCard.classList.remove('scale-95');
+        summaryModalCard.classList.add('scale-100');
+      }, 10);
+    }
+
+    function hideSubmissionSummary() {
+      summaryModal.classList.add('opacity-0');
+      summaryModalCard.classList.remove('scale-100');
+      summaryModalCard.classList.add('scale-95');
+      setTimeout(() => {
+        summaryModal.classList.add('hidden');
+      }, 200);
+    }
+
+    closeSummaryModalBtn.addEventListener('click', hideSubmissionSummary);
+    summaryModalAnotherBtn.addEventListener('click', () => {
+      hideSubmissionSummary();
+      memberNameInput.focus();
+    });
+    summaryModalViewRosterBtn.addEventListener('click', () => {
+      hideSubmissionSummary();
+      switchTab('dashboard');
+    });
+    viewFullRosterBtn.addEventListener('click', () => switchTab('dashboard'));
+
+
+    // ==========================================
+    // CLOUD SYNC & CENTRALIZED DATABASE LOGIC
+    // ==========================================
+    // PASTE YOUR DEPLOYED GOOGLE APPS SCRIPT WEB APP URL BETWEEN THE QUOTES BELOW:
+    // (e.g. const DEFAULT_CLOUD_URL = "https://script.google.com/macros/s/.../exec";)
+    const DEFAULT_CLOUD_URL = "https://script.google.com/macros/s/AKfycbzvnpHuO_AAUpGPZk3OaRRK3a7ncBc-442zbml1wuiTfa1TuNKpKDcDhcgTtp4fyMwMng/exec";
+
+    const CLOUD_STORAGE_KEY = 'ipath_cloud_sheet_url';
+    let savedCloudUrl = '';
+    try {
+      savedCloudUrl = localStorage.getItem(CLOUD_STORAGE_KEY);
+    } catch(e) {}
+    let cloudSheetUrl = (savedCloudUrl && savedCloudUrl.trim() !== '') ? savedCloudUrl.trim() : DEFAULT_CLOUD_URL;
+
+    const cloudModal = document.getElementById('cloudModal');
+    const cloudModalCard = document.getElementById('cloudModalCard');
+    const openCloudModalBtn = document.getElementById('openCloudModalBtn');
+    const closeCloudModalBtn = document.getElementById('closeCloudModalBtn');
+    const cloudSheetUrlInput = document.getElementById('cloudSheetUrlInput');
+    const saveCloudUrlBtn = document.getElementById('saveCloudUrlBtn');
+    const testSyncBtn = document.getElementById('testSyncBtn');
+    const refreshCloudBtn = document.getElementById('refreshCloudBtn');
+    const copyAppsScriptBtn = document.getElementById('copyAppsScriptBtn');
+    const cloudStatusIcon = document.getElementById('cloudStatusIcon');
+    const cloudStatusText = document.getElementById('cloudStatusText');
+
+    function updateCloudStatusUI() {
+      if (cloudSheetUrl) {
+        cloudStatusIcon.textContent = '🟢';
+        cloudStatusText.textContent = 'Cloud Synced';
+        cloudSheetUrlInput.value = cloudSheetUrl;
+      } else {
+        cloudStatusIcon.textContent = '☁️';
+        cloudStatusText.textContent = 'Connect Cloud';
+        cloudSheetUrlInput.value = '';
+      }
+    }
+
+    function openCloudModal() {
+      updateCloudStatusUI();
+      cloudModal.classList.remove('hidden');
+      setTimeout(() => {
+        cloudModal.classList.remove('opacity-0');
+        cloudModalCard.classList.remove('scale-95');
+        cloudModalCard.classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeCloudModal() {
+      cloudModal.classList.add('opacity-0');
+      cloudModalCard.classList.remove('scale-100');
+      cloudModalCard.classList.add('scale-95');
+      setTimeout(() => {
+        cloudModal.classList.add('hidden');
+      }, 200);
+    }
+
+    openCloudModalBtn.addEventListener('click', openCloudModal);
+    closeCloudModalBtn.addEventListener('click', closeCloudModal);
+
+    saveCloudUrlBtn.addEventListener('click', () => {
+      const url = cloudSheetUrlInput.value.trim();
+      if (!url) {
+        localStorage.removeItem(CLOUD_STORAGE_KEY);
+        cloudSheetUrl = '';
+        updateCloudStatusUI();
+        showToast('Cloud Disconnected', 'Switched back to local browser storage.');
+        return;
+      }
+      try {
+        localStorage.setItem(CLOUD_STORAGE_KEY, url);
+        cloudSheetUrl = url;
+        updateCloudStatusUI();
+        showToast('Google Sheet Connected', 'Cloud sync configured! Fetching live responses...');
+        fetchResponsesFromCloud(true);
+      } catch (err) {
+        showToast('Storage Error', 'Could not save Cloud URL locally.', true);
+      }
+    });
+
+    testSyncBtn.addEventListener('click', () => {
+      fetchResponsesFromCloud(true);
+    });
+
+    if (refreshCloudBtn) {
+      refreshCloudBtn.addEventListener('click', () => {
+        fetchResponsesFromCloud(true);
+      });
+    }
+
+    copyAppsScriptBtn.addEventListener('click', () => {
+      const code = document.getElementById('appsScriptCodeBlock').textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(() => {
+          showToast('Code Copied!', 'Google Apps Script code copied to clipboard.');
+        }).catch(() => fallbackCopy(code));
+      } else {
+        fallbackCopy(code);
+      }
+    });
+
+    function fallbackCopy(text) {
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showToast('Code Copied!', 'Google Apps Script code copied to clipboard.');
+      } catch (e) {
+        showToast('Copy Failed', 'Please select and copy the code manually.', true);
+      }
+    }
+
+    function syncEntryToCloud(entry) {
+      if (!cloudSheetUrl) return;
+      try {
+        fetch(cloudSheetUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(entry)
+        }).catch(err => {
+          console.warn('Background cloud sync warning:', err);
+        });
+      } catch (err) {
+        console.warn('Sync post failed:', err);
+      }
+    }
+
+    function syncDeleteToCloud(id) {
+      if (!cloudSheetUrl) return;
+      try {
+        fetch(cloudSheetUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ action: 'delete', id: String(id) })
+        }).catch(err => {
+          console.warn('Background cloud delete warning:', err);
+        });
+      } catch (err) {
+        console.warn('Sync delete failed:', err);
+      }
+    }
+
+    async function fetchResponsesFromCloud(showFeedback = false) {
+      if (!cloudSheetUrl) {
+        if (showFeedback) showToast('Cloud Not Connected', 'Click "Connect Cloud" to link your Google Sheet URL.', true);
+        return;
+      }
+      try {
+        const res = await fetch(cloudSheetUrl);
+        if (!res.ok) throw new Error('HTTP error ' + res.status);
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) {
+          responses = data;
+          saveResponses();
+          updateBadge();
+          updateRunningTotals();
+          renderDashboard();
+          if (showFeedback) showToast('Responses Synced!', `Loaded ${data.length} responses from shared Google Sheet.`);
+        } else if (showFeedback) {
+          showToast('Connected to Sheet', 'Google Sheet is connected, but contains no response rows yet.');
+        }
+      } catch (err) {
+        console.warn('Fetch from cloud error:', err);
+        if (showFeedback) showToast('Sync Failed', 'Could not fetch from Google Sheet URL. Please ensure Web App access is set to "Anyone".', true);
+      }
+    }
+
+    rsvpForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = memberNameInput.value.trim();
+      if (!name) {
+        showToast('Required Field Missing', 'Please enter your full name.', true);
+        memberNameInput.focus();
+        return;
+      }
+
+      const departmentSelect = document.getElementById('memberDepartment');
+      const department = departmentSelect.value;
+      if (!department) {
+        showToast('Department Required', 'Please select your department.', true);
+        departmentSelect.focus();
+        return;
+      }
+
+      const isAttending = attendYesRadio.checked ? 'yes' : 'no';
+      let spouseOption = 'alone';
+      let hasKids = 'no';
+      let bringingKids = 'without_kids';
+      let kidsCount = 0;
+      let totalHeadcount = 0;
+
+      if (isAttending === 'yes') {
+        spouseOption = spouseWithRadio.checked ? 'with_spouse' : 'alone';
+        hasKids = hasKidsYesRadio.checked ? 'yes' : 'no';
+        
+        if (hasKids === 'yes') {
+          bringingKids = bringingKidsYesRadio.checked ? 'with_kids' : 'without_kids';
+          if (bringingKids === 'with_kids') {
+            if (document.getElementById('kidsCount1').checked) kidsCount = 1;
+            else if (document.getElementById('kidsCount2').checked) kidsCount = 2;
+            else if (document.getElementById('kidsCount3').checked) kidsCount = 3;
+          }
+        }
+
+        totalHeadcount = 1 + (spouseOption === 'with_spouse' ? 1 : 0) + kidsCount;
+      }
+
+      const newEntry = {
+        id: 'resp_' + Date.now(),
+        name: name,
+        department: department,
+        attending: isAttending,
+        spouse: spouseOption,
+        hasKids: hasKids,
+        bringingKids: bringingKids,
+        kidsCount: kidsCount,
+        totalHeadcount: totalHeadcount,
+        createdAt: new Date().toISOString()
+      };
+
+      responses.unshift(newEntry);
+      syncEntryToCloud(newEntry);
+      saveResponses();
+      updateBadge();
+      updateRunningTotals();
+
+      // Reset form fields for next entry
+      rsvpForm.reset();
+      attendYesRadio.checked = true;
+      spouseAloneRadio.checked = true;
+      hasKidsNoRadio.checked = true;
+      bringingKidsNoRadio.checked = true;
+      document.getElementById('kidsCount1').checked = true;
+      updateFormLogic();
+
+      // Show comprehensive summary modal of total members upon each form being filled
+      showSubmissionSummary(newEntry);
+      showToast('RSVP Recorded Successfully!', `Summary recorded for ${name}. Running total updated.`);
+    });
+
+    // Reset Form button
+    document.getElementById('resetFormBtn').addEventListener('click', () => {
+      rsvpForm.reset();
+      attendYesRadio.checked = true;
+      spouseAloneRadio.checked = true;
+      hasKidsNoRadio.checked = true;
+      bringingKidsNoRadio.checked = true;
+      document.getElementById('kidsCount1').checked = true;
+      updateFormLogic();
+    });
+
+    // Toast functions
+    const toastNotification = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    const toastCloseBtn = document.getElementById('toastCloseBtn');
+    let toastTimeout = null;
+
+    function showToast(title, message, isError = false) {
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTitle.textContent = title;
+      toastMessage.textContent = message;
+      if (isError) {
+        toastNotification.className = 'fixed top-5 right-5 z-50 transform transition-all duration-300 translate-y-0 opacity-100 max-w-md w-full bg-white rounded-xl shadow-2xl border-l-4 border-red-500 p-4 flex items-start gap-3';
+      } else {
+        toastNotification.className = 'fixed top-5 right-5 z-50 transform transition-all duration-300 translate-y-0 opacity-100 max-w-md w-full bg-white rounded-xl shadow-2xl border-l-4 border-amber-500 p-4 flex items-start gap-3';
+      }
+      toastTimeout = setTimeout(() => {
+        hideToast();
+      }, 4500);
+    }
+
+    function hideToast() {
+      toastNotification.className = 'fixed top-5 right-5 z-50 transform transition-all duration-300 translate-y-[-120%] opacity-0 pointer-events-none max-w-md w-full bg-white rounded-xl shadow-2xl border-l-4 border-amber-500 p-4 flex items-start gap-3';
+    }
+
+    toastCloseBtn.addEventListener('click', hideToast);
+
+    // Dashboard rendering and KPIs
+    function updateBadge() {
+      document.getElementById('responseCountBadge').textContent = responses.length.toString();
+    }
+
+    function renderDashboard() {
+      updateBadge();
+
+      // Filter state
+      const searchKeyword = document.getElementById('searchTableInput').value.toLowerCase().trim();
+      const filterCategory = document.getElementById('filterAttendanceSelect').value;
+
+      let totalResponses = responses.length;
+      let totalHeadcount = 0;
+      let attendingEmployees = 0;
+      let totalSpouses = 0;
+      let totalKids = 0;
+
+      let aloneCount = 0;
+      let withSpouseCount = 0;
+      let declineCount = 0;
+
+      let kid1Count = 0;
+      let kid2Count = 0;
+      let kid3Count = 0;
+
+
+      responses.forEach(r => {
+        if (r.attending === 'yes') {
+          attendingEmployees += 1;
+          totalHeadcount += (r.totalHeadcount || 1);
+
+          if (r.spouse === 'with_spouse') {
+            totalSpouses += 1;
+            withSpouseCount += 1;
+          } else {
+            aloneCount += 1;
+          }
+
+          if (r.bringingKids === 'with_kids') {
+            const count = parseInt(r.kidsCount, 10) || 0;
+            totalKids += count;
+            if (count === 1) kid1Count += 1;
+            else if (count === 2) kid2Count += 1;
+            else if (count === 3) kid3Count += 1;
+          }
+
+
+        } else {
+          declineCount += 1;
+        }
+      });
+
+      // Update KPIs
+      document.getElementById('kpiTotalResponses').textContent = totalResponses;
+      document.getElementById('kpiTotalHeadcount').textContent = totalHeadcount;
+      document.getElementById('kpiAttendingEmployees').textContent = attendingEmployees;
+      document.getElementById('kpiTotalSpouses').textContent = totalSpouses;
+      document.getElementById('kpiTotalKids').textContent = totalKids;
+      document.getElementById('kpiKidsBreakdownText').textContent = `1k: ${kid1Count} | 2k: ${kid2Count} | 3k: ${kid3Count}`;
+
+      // Stat cards
+      document.getElementById('statAloneCount').textContent = aloneCount;
+      document.getElementById('statWithSpouseCount').textContent = withSpouseCount;
+      document.getElementById('statDeclineCount').textContent = declineCount;
+
+      document.getElementById('statKid1Count').textContent = kid1Count;
+      document.getElementById('statKid1Sum').textContent = kid1Count * 1;
+      document.getElementById('statKid2Count').textContent = kid2Count;
+      document.getElementById('statKid2Sum').textContent = kid2Count * 2;
+      document.getElementById('statKid3Count').textContent = kid3Count;
+      document.getElementById('statKid3Sum').textContent = kid3Count * 3;
+
+
+      // Table filtering
+      const filtered = responses.filter(r => {
+        const matchesName = r.name.toLowerCase().includes(searchKeyword);
+        if (!matchesName) return false;
+
+        if (filterCategory === 'attending') return r.attending === 'yes';
+        if (filterCategory === 'with_spouse') return r.attending === 'yes' && r.spouse === 'with_spouse';
+        if (filterCategory === 'alone') return r.attending === 'yes' && r.spouse === 'alone';
+        if (filterCategory === 'with_kids') return r.attending === 'yes' && r.bringingKids === 'with_kids';
+        if (filterCategory === 'not_attending') return r.attending === 'no';
+        return true;
+      });
+
+      const tbody = document.getElementById('attendeeTableBody');
+      const emptyState = document.getElementById('tableEmptyState');
+
+      tbody.innerHTML = '';
+      if (filtered.length === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+        filtered.forEach((r, idx) => {
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-amber-50/40 transition-colors';
+
+          let statusBadge = r.attending === 'yes'
+            ? '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">Attending</span>'
+            : '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">Declined</span>';
+
+          let spouseText = '-';
+          if (r.attending === 'yes') {
+            spouseText = r.spouse === 'with_spouse'
+              ? '<span class="text-rose-700 font-semibold flex items-center gap-1">👫 With Spouse (+1)</span>'
+              : '<span class="text-slate-600 flex items-center gap-1">👤 Attending Alone</span>';
+          }
+
+          let kidsText = '-';
+          if (r.attending === 'yes') {
+            if (r.hasKids === 'no') {
+              kidsText = '<span class="text-slate-400">No kids</span>';
+            } else if (r.bringingKids === 'without_kids') {
+              kidsText = '<span class="text-slate-500">Has kids (coming without kids)</span>';
+            } else {
+              kidsText = `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 font-bold border border-amber-200">🎈 ${r.kidsCount} Kid${r.kidsCount > 1 ? 's' : ''}</span>`;
+            }
+          }
+
+          let headcountBadge = r.attending === 'yes'
+            ? `<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-amber-500 text-white font-bold text-xs shadow-sm">${r.totalHeadcount}</span>`
+            : '<span class="text-slate-400">0</span>';
+
+          tr.innerHTML = `
+            <td class="py-3 px-4 text-slate-400">${idx + 1}</td>
+            <td class="py-3 px-4 font-semibold text-slate-900">${escapeHtml(r.name)}</td>
+            <td class="py-3 px-4 text-slate-700 font-medium">${escapeHtml(r.department || 'General')}</td>
+            <td class="py-3 px-4">${statusBadge}</td>
+            <td class="py-3 px-4">${spouseText}</td>
+            <td class="py-3 px-4">${kidsText}</td>
+            <td class="py-3 px-4 text-center">${headcountBadge}</td>
+            <td class="py-3 px-4 text-right">
+              <button type="button" class="delete-btn text-red-500 hover:text-red-700 text-xs font-semibold p-1 hover:bg-red-50 rounded" data-id="${escapeHtml(String(r.id !== undefined && r.id !== null && r.id !== '' ? r.id : idx))}" title="Remove entry">
+                Delete
+              </button>
+            </td>
+          `;
+          tbody.appendChild(tr);
+        });
+
+        // Attach delete listeners
+        tbody.querySelectorAll('.delete-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const id = e.currentTarget.getAttribute('data-id');
+            deleteEntry(id);
+          });
+        });
+      }
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function deleteEntry(id) {
+      const targetId = String(id);
+      responses = responses.filter((r, idx) => {
+        const rowId = (r.id !== undefined && r.id !== null && r.id !== '') ? String(r.id) : String(idx);
+        return rowId !== targetId;
+      });
+      syncDeleteToCloud(targetId);
+      saveResponses();
+      updateBadge();
+      updateRunningTotals();
+      renderDashboard();
+      showToast('Entry Removed', 'The registration record has been deleted.');
+    }
+
+    // Search and Filter Listeners
+    document.getElementById('searchTableInput').addEventListener('input', renderDashboard);
+    document.getElementById('filterAttendanceSelect').addEventListener('change', renderDashboard);
+
+    // Export to CSV
+    document.getElementById('exportCsvBtn').addEventListener('click', () => {
+      if (responses.length === 0) {
+        showToast('No Records', 'There are no registrations to export.', true);
+        return;
+      }
+
+      const headers = ['Team Member Name', 'Department', 'Attendance Status', 'Spouse Option', 'Has Kids', 'Bringing Kids', 'Number of Kids', 'Total Headcount', 'Registration Timestamp'];
+      const rows = responses.map(r => [
+        `"${(r.name || '').replace(/"/g, '""')}"`,
+        `"${(r.department || 'General').replace(/"/g, '""')}"`,
+        r.attending === 'yes' ? 'Attending' : 'Declined',
+        r.attending === 'yes' ? (r.spouse === 'with_spouse' ? 'With Spouse' : 'Alone') : 'N/A',
+        r.hasKids === 'yes' ? 'Yes' : 'No',
+        r.bringingKids === 'with_kids' ? 'With Kids' : 'Without Kids',
+        r.kidsCount || 0,
+        r.totalHeadcount || 0,
+        r.createdAt || ''
+      ]);
+
+      const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement('a');
+      link.setAttribute('href', encodedUri);
+      link.setAttribute('download', `iPath_Infotech_Diwali_2026_RSVP_List.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      showToast('CSV Exported', 'Downloaded complete RSVP list for catering and venue planning.');
+    });
+
+    // Populate Sample Data button
+    document.getElementById('loadSampleDataBtn').addEventListener('click', () => {
+      responses = [...sampleRoster];
+      saveResponses();
+      updateRunningTotals();
+      renderDashboard();
+      showToast('Sample Data Loaded', 'Loaded 6 representative team member responses.');
+    });
+
+    // Initialize on page load
+    loadResponses();
+    updateBadge();
+    updateRunningTotals();
+    updateFormLogic();
+    updateCloudStatusUI();
+    if (cloudSheetUrl) {
+      fetchResponsesFromCloud(false);
+    }
+  </script>
+</body>
+</html>
